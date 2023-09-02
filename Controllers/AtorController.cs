@@ -29,6 +29,7 @@ public class AtorController : ControllerBase
     {
         using var context = new MyDbContext();
 
+        // TODO: Arrumar para aparecer os filmes dos atores no retorno
         List<Ator> atores = context.Atores.ToList();
         return atores;
     }
